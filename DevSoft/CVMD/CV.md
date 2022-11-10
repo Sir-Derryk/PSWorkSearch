@@ -30,7 +30,7 @@ Work schedule: remote working, full day
 
 20 years and 5 months
 
-The two last postions are described below.
+The two last positions are described below.
 
 ### Kaspersky
 
