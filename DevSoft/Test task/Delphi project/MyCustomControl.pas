@@ -13,7 +13,6 @@ type
     aBallSpeed : byte;
     aBallRadius : byte;
     aCollisionCount : cardinal;
-    aDirection : string;
     //Current position
     XCenter : word;
     YCenter : word;
