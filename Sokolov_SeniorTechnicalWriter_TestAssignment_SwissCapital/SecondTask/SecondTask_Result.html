@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add or Edit Users</title>
+    <style>
+        body {
+            font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .comment {
+            background-color: #f0f8ff;
+            border-left: 4px solid #0078d4;
+            padding: 10px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+
+        .note {
+            background-color: #fff4ce;
+            border: 1px solid #ffb900;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add or edit users</h1>
+    
+    <p class="comment">
+        Title change: removed the definite article "the" and made "user" plural. Microsoft Style Guide emphasizes clarity and conciseness in headings. Title capitalized in title style, heading in sentence style.
+        <br><a href="https://docs.microsoft.com/en-us/style-guide/capitalization">Capitalization</a>, <a href="https://learn.microsoft.com/en-us/style-guide/text-formatting/formatting-titles">Formatting titles</a>
+    </p>
+
+    <p>
+        Users are automatically added when they register. You can also manually add users or edit existing user information.
+    </p>
+
+    <p class="comment">Removed marketing language. Made it task-focused and concise.
+		<br><a href="https://learn.microsoft.com/en-us/style-guide/word-choice/use-simple-words-concise-sentences">Use simple words, concise sentences</a>
+    </p>
+
+    <h2>Add a user</h2>
+    
+    <p class="comment">
+        Split 'Add' and 'Edit' into separate sections for better structure.
+        <br><a href="https://docs.microsoft.com/en-us/style-guide/scannable-content/headings">Headings</a>
+    </p>
+    <ol>
+        <li>Navigate to <strong>Users</strong> > <strong>New user</strong>.</li>
+        <li>Specify the user's email address.</li>
+        <li>Specify a temporary password. The user can change this password later.</li>
+        <li>Complete the profile fields:
+            <ul>
+                <li><strong>First name</strong>: 1-128 characters. Letters, apostrophes, hyphens, periods, and spaces only.</li>
+                <li><strong>Last name</strong>: 1-128 characters. Letters, apostrophes, hyphens, periods, and spaces only.</li>
+                <li><strong>Date of birth</strong>: Select from the calendar.</li>
+				<li><strong>Country</strong>: Specify the user's country.</li>
+                <li><strong>City</strong>: Specify the user's city.</li>
+				<li><strong>Address</strong>: Specify the user's address.</li>
+                <li><strong>Phone number</strong>: Specify the user's phone number.</li>
+                <li><strong>Gender</strong>: Select Male or Female.</li>
+				<li><strong>Additional information</strong>: If needed, specify additional information, such as nickname, profession, time zone, or security question.
+            </ul>
+		<li>If needed, change the default <strong>Personal ID</strong> assigned to the user.</li>
+        </li>
+        <li>Click <strong>Create</strong> to apply your changes.</li>
+    </ol>
+
+    <p class="comment">
+		Used bold for UI elements according to the Microsoft Style Guide. All steps standardized to the 'action verb + object' pattern. Profile fields combined into a sub-list. Text shortened and clarified. Used 'select' for choose in sub-form, 'specify' for typing, 'click' for buttons. Used "First name" and 'Last name' instead of "user name" and "surname" (this should be done for the UI as well).
+        <br> <a href="https://docs.microsoft.com/en-us/style-guide/procedures-instructions/formatting-text-in-instructions">Formatting text in instructions</a>, <a href="https://learn.microsoft.com/en-us/style-guide/word-choice/use-simple-words-concise-sentences">Use simple words, concise sentences</a>, <a href="https://docs.microsoft.com/en-us/style-guide/grammar/verbs">Verbs</a>
+		<br>It is also important to understand the list of parameters. In the editing section, the list contains fields that are not mentioned in the description of adding a user. I assume that all fields are visible and enabled while adding; however, some parameters are reqired, while others are optional. Also, I guess the Personal ID parameter is assigned to the user automatically but can be changed. I describe each required parameter separately and list the optional ones. In addition, I create a separate step for Personal ID. Depending on the logic of the interface design and the company's standards, the description may require revision. Specific fields may need to be described separately or added to the list of optional ones. The structure may also require revision, and some fields may need to be added, as I'm not sure that the list is complete.
+		<br>
+		And one more thing: a checkbox looks a little strange as a way to indicate the user's gender. Even if we limit ourselves to binary options, I suggest using radio buttons or a dropdown list. A checkbox with the heading "I am a man" or "I am a woman" creates an awkward user experience.
+    </p>
+
+    <h2>Edit a user</h2>
+
+    <ol>
+        <li>Navigate to <strong>Users</strong>.</li>
+        <li>Select the email address of the user you want to edit.</li>
+        <li>On the user details page, click <strong>Edit user</strong>.</li>
+        <li>Make your changes to any of these fields:
+            <ul>
+                <li>First name, last name, nickname</li>
+                <li>Date of birth</li>
+                <li>Country, city, address, phone number</li>
+                <li>Gender, profession, time zone</li>
+                <li>Security question, personal ID</li>
+            </ul>
+        </li>
+        <li>Click <strong>Update user</strong> to apply your changes.</li>
+    </ol>
+
+    <p class="comment">
+		Made editing a distinct process with its own heading. Restructured steps. Grouped related fields for easier scanning. Used 'click' for buttons.
+		<br> <a href="https://docs.microsoft.com/en-us/style-guide/procedures-instructions/formatting-text-in-instructions">Formatting text in instructions</a>, <a href="https://learn.microsoft.com/en-us/style-guide/word-choice/use-simple-words-concise-sentences">Use simple words, concise sentences</a>, <a href="https://docs.microsoft.com/en-us/style-guide/grammar/verbs">Verbs</a>
+		<br>It is unclear whether the administrator can change the email address field. The source text doesn't mention it. On the other hand, the list begins with the words "for example," so I'm not sure that it is complete. I assume that there are no other fields and that the email address is the primary key, which should not be edited.
+    </p>
+
+    <p class="note">
+		<strong>Note:</strong> Users cannot be deleted after they are created.
+    </p>
+
+    <p class="comment">
+        Removed formal language. Highlighted 'Note' to draw attention to this important limitation. Text shortened.
+        <br><a href="https://learn.microsoft.com/en-us/style-guide/word-choice/use-simple-words-concise-sentences">Use simple words, concise sentences</a>, <a href="https://docs.microsoft.com/en-us/style-guide/grammar/verbs">Verbs</a>
+    </p>
+
+</body>
+</html>
