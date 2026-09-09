@@ -11,5 +11,4 @@ jobs:
       - uses: Flude-team/flude-action@main
         with:
           api-base-url: https://flude-worker-controlplane-bfsnlsrm2a-uc.a.run.app
-        env:
-          FLUDE_API_TOKEN: ${{ secrets.FLUDE_API_TOKEN }}
+          api-token: ${{ secrets.FLUDE_API_TOKEN }}
